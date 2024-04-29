@@ -33,9 +33,13 @@
   font-size: 24px;
   font-weight: 500;
 }
-.sidebar .nav-links{
-  margin-top: 10px;
+.sidebar .nav-links li {
+  position: relative;
+  list-style: none;
+  height: 50px;
+  margin-left: 0; /* Added to remove left margin */
 }
+
 .sidebar .nav-links li{
   position: relative;
   list-style: none;
@@ -55,11 +59,12 @@
 .sidebar .nav-links li a:hover{
   background: #081D45;
 }
-.sidebar .nav-links li i{
+.sidebar .nav-links li i {
   min-width: 60px;
   text-align: center;
   font-size: 18px;
   color: #fff;
+  margin-right: 10px;
 }
 .sidebar .nav-links li a .links_name{
   color: #fff;
@@ -345,6 +350,11 @@ nav .profile-details i{
   font-weight: 400;
   color: #333;
 }
+.home-content .overview-boxes .box a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from parent */
+}
+
 /* Responsive Media Query */
 @media (max-width: 1240px) {
   .sidebar{

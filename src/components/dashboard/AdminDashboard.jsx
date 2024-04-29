@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './AdminDashboard.css';
+import nike from '../../assets/nike-min.jpg';
 
 const AdminDashboard = () => {
   const [sidebarActive, setSidebarActive] = useState(false);
@@ -28,7 +29,7 @@ const AdminDashboard = () => {
 
   return (
     <>
-      <div className="sidebar">
+      <div className={`sidebar ${sidebarActive ? "active" : ""}`}>
         <div className="logo-details">
           <i className="bx bxs-business"></i>
           <span className="logo_name">HRM</span>
@@ -42,42 +43,36 @@ const AdminDashboard = () => {
           </li>
           <li>
             <Link to="/addstaff">
-              <i class='bx bxs-user-plus'></i>
+              <i className='bx bxs-user-plus'></i>
               <span className="links_name">Add Staff</span>
             </Link>
           </li>
           <li>
-            <Link to="#">
+            <Link to="/allstaffs">
               <i class='bx bx-edit-alt'></i>
-              <span className="links_name">Edit Staff</span>
+              <span className="links_name">Edit / Delete Staff</span>
             </Link>
           </li>
           <li>
-            <Link to="#">
-              <i class='bx bx-trash' ></i>
-              <span className="links_name">Delete Staff</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="#">
+            <Link to="/addclients">
               <i class='bx bx-user-plus'></i>
               <span className="links_name">add clients</span>
             </Link>
           </li>
           <li>
-            <Link to="#">
+            <Link to="/allclients">
               <i class='bx bx-edit' ></i>
               <span className="links_name">edit clients</span>
             </Link>
           </li>
           <li>
-            <Link to="#">
+            <Link to="adddepartment">
               <i class='bx bx-border-outer'></i>
               <span className="links_name">add Department</span>
             </Link>
           </li>
           <li>
-            <Link to="#">
+            <Link to="/editdepartment">
               <i class='bx bx-message-square-edit'></i>
               <span className="links_name">edit department</span>
             </Link>
@@ -122,47 +117,55 @@ const AdminDashboard = () => {
         <div className="home-content">
           <div className="overview-boxes">
             <div className="box">
-              <div className="right-side">
-                <div className="box-topic">Add Staffs</div>
-                <div className="number">40,876</div>
-                <div className="indicator">
-                <i class='bx bxs-user-plus'></i>
-                  <span className="text">Up from yesterday</span>
+              <Link to="/addstaff">
+                <div className="right-side">
+                  <div className="box-topic">Add Staffs</div>
+                  <div className="number">40,876</div>
+                  <div className="indicator">
+                    <i class='bx bxs-user-plus'></i>
+                    <span className="text">Up from yesterday</span>
+                  </div>
                 </div>
-              </div>
+              </Link>
               <i className="bx bx-cart-alt cart"></i>
             </div>
             <div className="box">
-              <div className="right-side">
-                <div className="box-topic">Edit Staff</div>
-                <div className="number">38,876</div>
-                <div className="indicator">
-                  <i className="bx bx-up-arrow-alt"></i>
-                  <span className="text">Up from yesterday</span>
+              <Link to="/allstaffs">
+                <div className="right-side">
+                  <div className="box-topic">Edit Staff</div>
+                  <div className="number">38,876</div>
+                  <div className="indicator">
+                    <i className="bx bx-up-arrow-alt"></i>
+                    <span className="text">Up from yesterday</span>
+                  </div>
                 </div>
-              </div>
+              </Link>
               <i className="bx bxs-cart-add cart two"></i>
             </div>
             <div className="box">
-              <div className="right-side">
-                <div className="box-topic">Add clients</div>
-                <div className="number">$12,876</div>
-                <div className="indicator">
-                  <i className="bx bx-up-arrow-alt"></i>
-                  <span className="text">Up from yesterday</span>
+              <Link to="/addclients">
+                <div className="right-side">
+                  <div className="box-topic">Add clients</div>
+                  <div className="number">$12,876</div>
+                  <div className="indicator">
+                    <i className="bx bx-up-arrow-alt"></i>
+                    <span className="text">Up from yesterday</span>
+                  </div>
                 </div>
-              </div>
+              </Link>
               <i className="bx bx-cart cart three"></i>
             </div>
             <div className="box">
-              <div className="right-side">
-                <div className="box-topic">Add Department</div>
-                <div className="number">11,086</div>
-                <div className="indicator">
-                  <i className="bx bx-down-arrow-alt down"></i>
-                  <span className="text">Down From Today</span>
+              <Link to="/adddepartment">
+                <div className="right-side">
+                  <div className="box-topic">Add Department</div>
+                  <div className="number">11,086</div>
+                  <div className="indicator">
+                    <i className="bx bx-down-arrow-alt down"></i>
+                    <span className="text">Down From Today</span>
+                  </div>
                 </div>
-              </div>
+              </Link>
               <i class='bx bx-bar-chart-square'></i>
             </div>
           </div>
@@ -223,46 +226,46 @@ const AdminDashboard = () => {
               </div>
             </div>
             <div className="top-sales box">
-              <div className="title">Top Seling Product</div>
+              <div className="title">Clients</div>
               <ul className="top-sales-details">
                 <li>
                   <Link to="#">
-                    <img src="images/sunglasses.jpg" alt="" />
+                    <img src={nike} alt="" />
                     <span className="product">Vuitton Sunglasses</span>
                   </Link>
                   <span className="price">$1107</span>
                 </li>
                 <li>
                   <Link to="#">
-                    <img src="images/jeans.jpg" alt="" />
+                    <img src={nike} alt="" />
                     <span className="product">Hourglass Jeans </span>
                   </Link>
                   <span className="price">$1567</span>
                 </li>
                 <li>
                   <Link to="#">
-                    <img src="images/nike-min.jpg" alt="" />
+                    <img src={nike} alt="" />
                     <span className="product">Nike Sport Shoe</span>
                   </Link>
                   <span className="price">$1234</span>
                 </li>
                 <li>
                   <Link to="#">
-                    <img src="images/scarves.jpg" alt="" />
+                    <img src={nike} alt="" />
                     <span className="product">Hermes Silk Scarves.</span>
                   </Link>
                   <span className="price">$2312</span>
                 </li>
                 <li>
                   <Link to="#">
-                    <img src="images/blueBag.jpg" alt="" />
+                    <img src={nike} alt="" />
                     <span className="product">Succi Ladies Bag</span>
                   </Link>
                   <span className="price">$1456</span>
                 </li>
                 <li>
                   <Link to="#">
-                    <img src="images/bag.jpg" alt="" />
+                    <img src={nike} alt="" />
                     <span className="product">Gucci Womens's Bags</span>
                   </Link>
                   <span className="price">$2345</span>
@@ -270,14 +273,14 @@ const AdminDashboard = () => {
 
                 <li>
                   <Link to="#">
-                    <img src="images/addidas.jpg" alt="" />
+                    <img src={nike} alt="" />
                     <span className="product">Addidas Running Shoe</span>
                   </Link>
                   <span className="price">$2345</span>
                 </li>
                 <li>
                   <Link to="#">
-                    <img src="images/shirt.jpg" alt="" />
+                    <img src={nike} alt="" />
                     <span className="product">Bilack Wear's Shirt</span>
                   </Link>
                   <span className="price">$1245</span>
