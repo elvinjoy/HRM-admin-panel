@@ -4,10 +4,13 @@ import AdminDashboard from './components/dashboard/AdminDashboard';
 import AddStaff from './components/addStaff/AddStaff';
 import EditStaff from './components/editStaff/EditStaff';
 import AddClients from './components/addClients/AddClients';
-import AddDepartment from './components/addDepartment/AddDepartment';
+import AddDepartment from './components/addDepartment/AddDepartment'; // Only one import needed
 import AllStaffs from './components/allStaffs/AllStaffs';
 import EditClients from './components/editClients/EditClients';
 import AllClients from './components/allClients/AllClients';
+import AllDepartments from './components/allDepartments/AllDepartments';
+import EditDepartment from './components/editDepartment/EditDepartment';
+
 function App() {
     return (
         <Router>
@@ -20,6 +23,8 @@ function App() {
                 <Route path='/allclients' element={<AllClients />} />
                 <Route path='/editclients' element={<EditClients />} />
                 <Route path='/adddepartment' element={<AddDepartment />} />
+                <Route path='/alldepartments' element={<AllDepartments />} />
+                <Route path='/editdepartment' element={<EditDepartment />} />
             </Routes>
         </Router>
     );

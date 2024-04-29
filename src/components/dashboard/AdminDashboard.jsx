@@ -66,13 +66,13 @@ const AdminDashboard = () => {
             </Link>
           </li>
           <li>
-            <Link to="adddepartment">
+            <Link to="/adddepartment">
               <i class='bx bx-border-outer'></i>
               <span className="links_name">add Department</span>
             </Link>
           </li>
           <li>
-            <Link to="/editdepartment">
+            <Link to="/alldepartments">
               <i class='bx bx-message-square-edit'></i>
               <span className="links_name">edit department</span>
             </Link>
