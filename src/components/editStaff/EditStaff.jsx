@@ -34,9 +34,10 @@ const EditStaff = () => {
 
     return (
         <div className="container">
-            <h1 className="mt-1 mb-3 text-center">Edit Staff</h1>
-            <div className="row">
-                <div className="col-md-6 mx-auto">
+        <h1 className="mt-3 mb-3 text-center">Edit Staff Page</h1>
+        <div className="row justify-content-center">
+            <div className="col-md-6">
+                <div className="card border p-4">
                     <form onSubmit={handleSubmit}>
                         <div className="mb-3">
                             <label className="form-label">Name:</label>
@@ -79,7 +80,7 @@ const EditStaff = () => {
                             <input type="text" className="form-control" name="salary" value={formData.salary} onChange={handleChange} />
                         </div>
                         <div className="mb-3 text-center">
-                            <button type="submit" className="btn btn-primary btn-block w-100" onClick={handleSubmit}>Edit Staff Details</button>
+                            <button type="submit" className="btn btn-primary btn-block w-100" onClick={handleSubmit}>Add Staff</button>
                         </div>
                         <div className="mb-3 text-center">
                             <button className="btn btn-danger btn-block w-100" onClick={handleDelete}>Delete Staff Details</button>
@@ -88,7 +89,8 @@ const EditStaff = () => {
                 </div>
             </div>
         </div>
-    );
+    </div>
+);
 };
 
 export default EditStaff;

@@ -15,7 +15,7 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path='/adminDashboard' element={<AdminDashboard />} />
+                <Route path='/' element={<AdminDashboard />} />
                 <Route path='/addstaff' element={<AddStaff />} />
                 <Route path='/editstaff' element={<EditStaff />} />
                 <Route path='/allstaffs' element={<AllStaffs />} />

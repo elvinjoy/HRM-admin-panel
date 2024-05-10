@@ -108,7 +108,7 @@ const AdminDashboard = () => {
             <i className="bx bx-search"></i>
           </div>
           <div className="profile-details">
-            <img src="images/profile.jpg" alt="" />
+            <img src={nike} alt="" />
             <span className="admin_name">Prem Shahi</span>
             <i className="bx bx-chevron-down"></i>
           </div>

@@ -6,6 +6,7 @@ const AddClients = () => {
         number: '',
         address: '',
         businessName: '',
+        projectName: '',
         workDescription: '',
         advance: '',
         totalPayment: '',
@@ -50,11 +51,15 @@ const AddClients = () => {
                                 <input type="text" className="form-control" name="businessName" value={formData.businessName} onChange={handleChange} />
                             </div>
                             <div className="mb-3">
+                                <label className="form-label">Project Name:</label>
+                                <input type="text" className="form-control" name="projectName" value={formData.projectName} onChange={handleChange} />
+                            </div>
+                            <div className="mb-3">
                                 <label className="form-label">Work Description:</label>
                                 <textarea className="form-control" name="workDescription" value={formData.workDescription} onChange={handleChange} />
                             </div>
                             <div className="mb-3">
-                                <label className="form-label">Advance:</label>
+                                <label className="form-label">Advance payment:</label>
                                 <input type="text" className="form-control" name="advance" value={formData.advance} onChange={handleChange} />
                             </div>
                             <div className="mb-3">

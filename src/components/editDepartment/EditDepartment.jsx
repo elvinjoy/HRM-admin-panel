@@ -12,6 +12,11 @@ const EditDepartment = () => {
         console.log("Editing department:", departmentName);
     };
 
+    const handleDelete = () => {
+        // Handle delete action here
+        console.log("Deleting department:", departmentName);
+    };
+
     return (
         <div className="container d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
             <div className="col-md-6">
@@ -22,7 +27,8 @@ const EditDepartment = () => {
                         <input type="text" className="form-control" value={departmentName} onChange={handleChange} />
                     </div>
                     <div className="text-center">
-                        <button className="btn btn-primary w-100" onClick={handleEdit}>Edit Department</button>
+                        <button className="btn btn-primary w-100 mb-2" onClick={handleEdit}>Edit Department</button>
+                        <button className="btn btn-danger w-100" onClick={handleDelete}>Delete Department</button>
                     </div>
                 </div>
             </div>
