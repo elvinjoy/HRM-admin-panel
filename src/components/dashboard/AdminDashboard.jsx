@@ -100,7 +100,7 @@ const AdminDashboard = () => {
       <div className="home-section">
         <nav>
           <div className="sidebar-button">
-            <i className="bx bx-menu sidebarBtn"></i>
+            <i className="bx bx-menu sidebarBtn" style={{ cursor: "pointer" }}></i>
             <span className="dashboard">Admin Dashboard</span>
           </div>
           <div className="search-box">
@@ -119,56 +119,55 @@ const AdminDashboard = () => {
             <div className="box">
               <Link to="/addstaff">
                 <div className="right-side">
-                  <div className="box-topic">Add Staffs</div>
-                  <div className="number">40,876</div>
+                  <div className="box-topic">Add Staffs</div> {/* Removed text */}
                   <div className="indicator">
                     <i class='bx bxs-user-plus'></i>
-                    <span className="text">Up from yesterday</span>
-                  </div>
-                </div>
-              </Link>
-              <i className="bx bx-cart-alt cart"></i>
-            </div>
-            <div className="box">
-              <Link to="/allstaffs">
-                <div className="right-side">
-                  <div className="box-topic">Edit Staff</div>
-                  <div className="number">38,876</div>
-                  <div className="indicator">
-                    <i className="bx bx-up-arrow-alt"></i>
-                    <span className="text">Up from yesterday</span>
+                    <span className="text">Click Here</span>
                   </div>
                 </div>
               </Link>
               <i className="bx bxs-cart-add cart two"></i>
             </div>
             <div className="box">
-              <Link to="/addclients">
+              <Link to="/allstaffs">
                 <div className="right-side">
-                  <div className="box-topic">Add clients</div>
-                  <div className="number">$12,876</div>
+                  <div className="box-topic">Edit Staff</div> {/* Removed text */}
                   <div className="indicator">
                     <i className="bx bx-up-arrow-alt"></i>
-                    <span className="text">Up from yesterday</span>
+                    <span className="text">Click Here</span>
                   </div>
                 </div>
               </Link>
-              <i className="bx bx-cart cart three"></i>
+              <i className="bx bx-cart-alt cart "></i>
+            </div>
+            <div className="box">
+              <Link to="/addclients">
+                <div className="right-side">
+                  <div className="box-topic">Add Clients</div> {/* Removed text */}
+                  <div className="indicator">
+                    <i className="bx bxs-user-plus"></i>
+                    <span className="text">Click Here</span>
+                  </div>
+                </div>
+              </Link>
+              <i className="bx bxs-cart-add cart three"></i>
             </div>
             <div className="box">
               <Link to="/adddepartment">
                 <div className="right-side">
-                  <div className="box-topic">Add Department</div>
-                  <div className="number">11,086</div>
+                  <div className="box-topic">Add Department</div> {/* Removed text */}
                   <div className="indicator">
-                    <i className="bx bx-down-arrow-alt down"></i>
-                    <span className="text">Down From Today</span>
+                    <i className="bx bx-up-arrow-alt"></i>
+                    <span className="text">Click Here</span>
                   </div>
                 </div>
               </Link>
-              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bx-cart-alt cart'></i>
             </div>
           </div>
+
+
+
 
           <div className="sales-boxes">
             <div className="recent-sales box">

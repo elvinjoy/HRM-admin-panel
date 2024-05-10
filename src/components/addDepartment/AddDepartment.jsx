@@ -15,7 +15,7 @@ const AddDepartment = () => {
     return (
         <div className="container d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
             <div className="col-md-6">
-                <div className="card border p-4">
+                <div className="card border p-3">
                     <h1 className="text-center mb-4">Add Department</h1>
                     <form onSubmit={handleSubmit}>
                         <div className="mb-3">
