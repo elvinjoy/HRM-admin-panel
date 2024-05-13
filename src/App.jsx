@@ -10,12 +10,14 @@ import EditClients from './components/editClients/EditClients';
 import AllClients from './components/allClients/AllClients';
 import AllDepartments from './components/allDepartments/AllDepartments';
 import EditDepartment from './components/editDepartment/EditDepartment';
+import AdminLogin from './components/adminLogin/AdminLogin';
 
 function App() {
     return (
         <Router>
             <Routes>
-                <Route path='/' element={<AdminDashboard />} />
+                <Route path='/' element={<AdminLogin />} />
+                <Route path='/admindashboard' element={<AdminDashboard />} />
                 <Route path='/addstaff' element={<AddStaff />} />
                 <Route path='/editstaff' element={<EditStaff />} />
                 <Route path='/allstaffs' element={<AllStaffs />} />

@@ -157,7 +157,7 @@ const AdminDashboard = () => {
                 <div className="right-side">
                   <div className="box-topic">Add Department</div> {/* Removed text */}
                   <div className="indicator">
-                    <i className="bx bx-up-arrow-alt"></i>
+                    <i className="bx bx-building"></i>
                     <span className="text">Click Here</span>
                   </div>
                 </div>
@@ -165,8 +165,6 @@ const AdminDashboard = () => {
               <i class='bx bx-cart-alt cart'></i>
             </div>
           </div>
-
-
 
 
           <div className="sales-boxes">
