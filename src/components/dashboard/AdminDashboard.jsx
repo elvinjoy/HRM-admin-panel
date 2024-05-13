@@ -90,7 +90,7 @@ const AdminDashboard = () => {
             </Link>
           </li>
           <li className="log_out">
-            <Link to="#">
+            <Link to="/">
               <i className="bx bx-log-out"></i>
               <span className="links_name">Log out</span>
             </Link>
@@ -162,7 +162,7 @@ const AdminDashboard = () => {
                   </div>
                 </div>
               </Link>
-              <i class='bx bx-cart-alt cart'></i>
+              <i class='bx bx-cart-alt cart four'></i>
             </div>
           </div>
 
