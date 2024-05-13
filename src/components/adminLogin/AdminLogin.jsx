@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 function AdminLogin() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleLogin = (e) => {
     e.preventDefault();
     console.log("Email:", email);
     console.log("Password:", password);
+    
+    // Assuming authentication logic here...
+    
+    // Redirect to /admindashboard after successful login
+    navigate('/admindashboard');
   };
 
   return (
