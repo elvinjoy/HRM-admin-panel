@@ -70,7 +70,19 @@ const AddStaff = () => {
                             </div>
                             <div className="mb-3">
                                 <label className="form-label">Designated Role:</label>
-                                <input type="text" className="form-control" name="designation" value={formData.designation} onChange={handleChange} />
+                                <select className="form-control" name="designation" value={formData.designation} onChange={handleChange}>
+                                    <option value="">Select Role</option>
+                                    <option value="Employee">Employee</option>
+                                    <option value="Team Lead">Team Lead</option>
+                                </select>
+                            </div>
+                            <div className="mb-3">
+                                <label className="form-label">Department</label>
+                                <select className="form-control" name="designation" value={formData.designation} onChange={handleChange}>
+                                    <option value="">Select department</option>
+                                    <option value="Employee">App development</option>
+                                    <option value="Team Lead">web development</option>
+                                </select>
                             </div>
                             <div className="mb-3">
                                 <label className="form-label">Salary:</label>

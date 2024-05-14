@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './AdminDashboard.css';
 import nike from '../../assets/nike-min.jpg';
+import profile from '../../assets/profile.jpg';
+import bluebag from '../../assets/blueBag.jpg';
 
 const AdminDashboard = () => {
   const [sidebarActive, setSidebarActive] = useState(false);
@@ -108,7 +110,7 @@ const AdminDashboard = () => {
             <i className="bx bx-search"></i>
           </div>
           <div className="profile-details">
-            <img src={nike} alt="" />
+            <img src={profile} alt="" />
             <span className="admin_name">Prem Shahi</span>
             <i className="bx bx-chevron-down"></i>
           </div>
@@ -119,7 +121,7 @@ const AdminDashboard = () => {
             <div className="box">
               <Link to="/addstaff">
                 <div className="right-side">
-                  <div className="box-topic">Add Staffs</div> {/* Removed text */}
+                  <div className="box-topic">Add Staffs</div>
                   <div className="indicator">
                     <i class='bx bxs-user-plus'></i>
                     <span className="text">Click Here</span>
@@ -131,7 +133,7 @@ const AdminDashboard = () => {
             <div className="box">
               <Link to="/allstaffs">
                 <div className="right-side">
-                  <div className="box-topic">Edit Staff</div> {/* Removed text */}
+                  <div className="box-topic">Edit Staff</div>
                   <div className="indicator">
                     <i className="bx bx-up-arrow-alt"></i>
                     <span className="text">Click Here</span>
@@ -143,7 +145,7 @@ const AdminDashboard = () => {
             <div className="box">
               <Link to="/addclients">
                 <div className="right-side">
-                  <div className="box-topic">Add Clients</div> {/* Removed text */}
+                  <div className="box-topic">Add Clients</div>
                   <div className="indicator">
                     <i className="bx bxs-user-plus"></i>
                     <span className="text">Click Here</span>
@@ -155,7 +157,7 @@ const AdminDashboard = () => {
             <div className="box">
               <Link to="/adddepartment">
                 <div className="right-side">
-                  <div className="box-topic">Add Department</div> {/* Removed text */}
+                  <div className="box-topic">Add Department</div>
                   <div className="indicator">
                     <i className="bx bx-building"></i>
                     <span className="text">Click Here</span>
@@ -234,7 +236,7 @@ const AdminDashboard = () => {
                 </li>
                 <li>
                   <Link to="#">
-                    <img src={nike} alt="" />
+                    <img src={bluebag} alt="" />
                     <span className="product">Hourglass Jeans </span>
                   </Link>
                   <span className="price">$1567</span>
@@ -248,7 +250,7 @@ const AdminDashboard = () => {
                 </li>
                 <li>
                   <Link to="#">
-                    <img src={nike} alt="" />
+                    <img src={bluebag} alt="" />
                     <span className="product">Hermes Silk Scarves.</span>
                   </Link>
                   <span className="price">$2312</span>
@@ -262,7 +264,7 @@ const AdminDashboard = () => {
                 </li>
                 <li>
                   <Link to="#">
-                    <img src={nike} alt="" />
+                    <img src={bluebag} alt="" />
                     <span className="product">Gucci Womens's Bags</span>
                   </Link>
                   <span className="price">$2345</span>
@@ -277,7 +279,7 @@ const AdminDashboard = () => {
                 </li>
                 <li>
                   <Link to="#">
-                    <img src={nike} alt="" />
+                    <img src={bluebag} alt="" />
                     <span className="product">Bilack Wear's Shirt</span>
                   </Link>
                   <span className="price">$1245</span>
