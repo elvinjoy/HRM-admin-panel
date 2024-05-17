@@ -11,7 +11,8 @@ const AddStaff = () => {
         dob: '',
         address: '',
         image: '',
-        designation: '',
+        designatedRole: '',
+        department: '',
         salary: ''
     });
 
